@@ -1,0 +1,12 @@
+use eventorder;
+
+fn main() {
+    let times = [10, 13, 11, 11];
+    let result = eventorder_scan(times);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
